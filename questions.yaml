@@ -2,26 +2,26 @@ questions:
   - id: q1
     stage: quality_control
     text: |
-      How many total sequences were flagged for being poor quality?
-    answer_type: numeric_percent
+      In your opinion, does the forward read (SRR30916324_1.fastq) require trimming?
+    answer_type: text
   - id: q2
-    stage: alignment
+    stage: trimming
     text: |
-      What is the total number of reads with quality score less than 20?
-    answer_type: integer_exact
-  - id: q3
-    stage: alignment
-    text: |
-      What percent of reads uniquely map to the reference genome?
+      What percentage of input reads were dropped?
     answer_type: numeric_percent
+  - id: q3
+    stage: assembly_quality
+    text: |
+      What is the completeness percentage of the assembly
+    answer_type: integer_exact
     tolerance: 0.75
   - id: q4
-    stage: variant_calling
+    stage: assembly_quality
     text: |
-      How many total variants were found?
-    answer_type: integer_exact
+      Was there contamination?
+    answer_type: text
   - id: q5
-    stage: variant_calling
+    stage: assembly quality
     text: |
-      How many variant sites have at least 1 alternate allele call?
-    answer_type: integer_exact
+      What is the contamination percentage?
+    answer_type: numeric_percent
