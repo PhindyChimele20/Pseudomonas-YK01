@@ -13,7 +13,7 @@ questions:
     stage: assembly_quality
     text: |
       What is the completeness percentage of the assembly
-    answer_type: integer_exact
+    answer_type: integer
     tolerance: 0.75
   - id: q4
     stage: assembly_quality
