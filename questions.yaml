@@ -2,8 +2,9 @@ questions:
   - id: q1
     stage: quality_control
     text: |
-      In your opinion, does the forward read (SRR30916324_1.fastq) require trimming?
-    answer_type: text
+      What is the median quality of the forward read (SRR30916324_1.fastq)?
+    answer_type: integer
+    tolerance: 0.80
   - id: q2
     stage: trimming
     text: |
