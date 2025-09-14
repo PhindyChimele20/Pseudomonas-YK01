@@ -17,10 +17,11 @@ questions:
     answer_type: integer
     tolerance: 0.75
   - id: q4
-    stage: assembly_quality
+    stage: genome_assembly
     text: |
-      Was there contamination?
-    answer_type: text
+      What is the size of the assembly?
+    answer_type: integer_exact
+    tolerance:0.95
   - id: q5
     stage: assembly quality
     text: |
