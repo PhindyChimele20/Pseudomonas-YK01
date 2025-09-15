@@ -1,6 +1,6 @@
 answers:
-  q1: 39
-  q2: 9.44
-  q3: 99.68
-  q4: 6200000
-  q5: 0.11
+  q1: 39 (5% tolerance)
+  q2: 9.44 (7.5% tolerance)
+  q3: 99.68 (5% tolerance)
+  q4: 6200000 (10% tolerance)
+  q5: 0.11 (10% tolerance)
